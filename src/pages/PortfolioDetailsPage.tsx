@@ -13,7 +13,8 @@ const projectData = [
       "/assets/projects/dashboard-project/historical-page.png",
       "/assets/projects/dashboard-project/logs-page.png",
     ],
-    url: "https://github.com/fehmibaltaci/simple-dashboard",
+    repo: "https://github.com/fehmibaltaci/simple-dashboard",
+    live: "https://team-dashboard.onrender.com",
     category: "QA Analytics Dashboard",
     date: "April 2024",
   },
@@ -56,12 +57,22 @@ const PortfolioDetailsPage: React.FC = () => {
                   <li>
                     <strong>Project Date</strong>: {project.date}
                   </li>
-                  <li>
-                    <strong>Project URL</strong>:{" "}
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">
-                      {project.url}
-                    </a>
-                  </li>
+                  {project.live && (
+                    <li>
+                      <strong>Live Site</strong>:{" "}
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        {project.live}
+                      </a>
+                    </li>
+                  )}
+                  {project.repo && (
+                    <li>
+                      <strong>GitHub Repo</strong>:{" "}
+                      <a href={project.repo} target="_blank" rel="noopener noreferrer">
+                        {project.repo}
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
 

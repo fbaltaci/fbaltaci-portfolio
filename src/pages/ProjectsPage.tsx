@@ -13,6 +13,8 @@ const projects = [
       "/assets/projects/dashboard-project/historical-page.png",
       "/assets/projects/dashboard-project/logs-page.png",
     ],
+    repo: "https://github.com/fehmibaltaci/simple-dashboard",
+    live: "https://team-dashboard.onrender.com",
   },
 ];
 
@@ -45,9 +47,25 @@ const ProjectsPage: React.FC = () => {
                   <p>
                     <strong>Tools:</strong> {project.tools.join(", ")}
                   </p>
-                  <Link to={`/portfolio/${project.id}`} className="btn btn-outline-primary mt-2">
-                    View Details
-                  </Link>
+                  <div className="d-flex flex-wrap gap-2">
+                    <Link to={`/portfolio/${project.id}`} className="btn btn-outline-primary">
+                      View Details
+                    </Link>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-success">
+                        Live Demo
+                      </a>
+                    )}
+                    {project.repo && (
+                      <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark">
+                        GitHub
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
