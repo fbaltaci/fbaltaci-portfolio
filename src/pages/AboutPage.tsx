@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 const personalInfo = [
-  { label: "Location", value: "Alpharetta, GA" },
   { label: "Email", value: "fehmibalt@gmail.com" },
   { label: "Phone", value: "617-850-5304" },
   {
@@ -9,6 +8,11 @@ const personalInfo = [
     value: "fehmi-baltaci",
     link: "https://linkedin.com/in/fehmi-baltaci",
   },
+  {
+    label: "GitHub",
+    value: "fbaltaci",
+    link: "https://github.com/fbaltaci",
+  }
 ];
 
 const AboutPage: React.FC = () => {

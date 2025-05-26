@@ -1,59 +1,75 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
+const projectData = [
+  {
+    id: 1,
+    title: "Test Results Dashboard",
+    description:
+      "A web-based dashboard built with Dash and Plotly to visualize test results across multiple environments and tenants.",
+    tools: ["Python", "Dash", "Plotly", "Pandas", "CSV", "Bootstrap", "HTML", "CSS"],
+    images: [
+      "/assets/projects/dashboard-project/home-page.png",
+      "/assets/projects/dashboard-project/historical-page.png",
+      "/assets/projects/dashboard-project/logs-page.png",
+    ],
+    url: "https://github.com/fehmibaltaci/simple-dashboard",
+    category: "QA Analytics Dashboard",
+    date: "April 2024",
+  },
+];
 
 const PortfolioDetailsPage: React.FC = () => {
+  const { id } = useParams();
+  const project = projectData.find((p) => p.id === Number(id));
+
+  if (!project) return <div className="text-center py-5">Project not found</div>;
+
   return (
     <main className="main portfolio-details-page">
       <section id="portfolio-details" className="portfolio-details section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Portfolio Details</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4">
             <div className="col-lg-8">
-              <div className="portfolio-details-slider swiper">
-                <div className="swiper-wrapper align-items-center">
-                  <div className="swiper-slide">
-                    <img src="." alt="App 1" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src="/assets/portfolio/product-1.jpg" alt="Product 1" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src="/assets/portfolio/branding-1.jpg" alt="Branding 1" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src="/assets/portfolio/books-1.jpg" alt="Books 1" />
-                  </div>
+              {project.images.map((img, index) => (
+                <div key={index} className="mb-4">
+                  <img src={img} alt={`${project.title} ${index + 1}`} className="img-fluid rounded shadow-sm" />
                 </div>
-                <div className="swiper-pagination"></div>
-              </div>
+              ))}
             </div>
 
             <div className="col-lg-4">
               <div className="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                <h3>Project information</h3>
+                <h3>Project Information</h3>
                 <ul>
                   <li>
-                    <strong>Category</strong>: Web design
+                    <strong>Category</strong>: {project.category}
                   </li>
                   <li>
-                    <strong>Client</strong>: ASU Company
+                    <strong>Tools</strong>: {project.tools.join(", ")}
                   </li>
                   <li>
-                    <strong>Project date</strong>: 01 March, 2020
+                    <strong>Project Date</strong>: {project.date}
                   </li>
                   <li>
-                    <strong>Project URL</strong>: <a href="#">www.example.com</a>
+                    <strong>Project URL</strong>:{" "}
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      {project.url}
+                    </a>
                   </li>
                 </ul>
               </div>
-              <div className="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+
+              <div className="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
+                <h4>What this project solves:</h4>
                 <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                  Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
+                  The dashboard helps QA and DevOps teams monitor test performance across environments. It simplifies
+                  debugging, exposes trends with graphs, and organizes logs in a readable format.
                 </p>
               </div>
             </div>

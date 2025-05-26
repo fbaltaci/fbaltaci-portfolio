@@ -1,26 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Website",
-    description: "A modern e-commerce web application featuring product listings, cart, and checkout functionalities.",
-    tools: ["Angular", "TypeScript", "Bootstrap"],
-    image: "./assets/projects/project.jpg",
-  },
-  {
-    id: 2,
-    title: "Test Automation Dashboard",
-    description: "A dashboard to visualize automated test results, performance charts, and CI/CD integrations.",
-    tools: ["React", "Chart.js", "Jenkins", "Sass"],
-    image: "./assets/projects/project.jpg",
-  },
-  {
-    id: 3,
-    title: "Portfolio Site",
-    description: "A responsive personal website to showcase my work, resume, and contact information.",
-    tools: ["React", "Tailwind CSS", "TypeScript"],
-    image: "./assets/projects/project.jpg",
+    title: "Test Results Dashboard",
+    description:
+      "A web-based dashboard built with Dash and Plotly to visualize test results across multiple environments and tenants.",
+    tools: ["Python", "Dash", "Plotly", "Pandas", "CSV", "Bootstrap", "HTML", "CSS"],
+    images: [
+      "/assets/projects/dashboard-project/home-page.png",
+      "/assets/projects/dashboard-project/historical-page.png",
+      "/assets/projects/dashboard-project/logs-page.png",
+    ],
   },
 ];
 
@@ -38,12 +30,14 @@ const ProjectsPage: React.FC = () => {
             {projects.map((project) => (
               <div className="col-12 d-md-flex align-items-center gap-4" key={project.id}>
                 <div className="col-md-6">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="img-fluid rounded shadow-sm"
-                    style={{ maxHeight: "300px", objectFit: "cover" }}
-                  />
+                  <Link to={`/portfolio/${project.id}`}>
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="img-fluid rounded shadow-sm"
+                      style={{ maxHeight: "300px", objectFit: "cover" }}
+                    />
+                  </Link>
                 </div>
                 <div className="col-md-6">
                   <h4>{project.title}</h4>
@@ -51,6 +45,9 @@ const ProjectsPage: React.FC = () => {
                   <p>
                     <strong>Tools:</strong> {project.tools.join(", ")}
                   </p>
+                  <Link to={`/portfolio/${project.id}`} className="btn btn-outline-primary mt-2">
+                    View Details
+                  </Link>
                 </div>
               </div>
             ))}

@@ -2,22 +2,23 @@ import React from "react";
 
 const contactInfo = [
   {
-    icon: "bi bi-geo-alt",
-    title: "Address",
-    text: "Alpharetta, GA",
-    delay: 200,
-  },
-  {
     icon: "bi bi-telephone",
     title: "Call Me",
     text: "+1 (617) 850-5304",
-    delay: 300,
+    delay: 200,
+  },
+  {
+    icon: "bi bi-linkedin",
+    title: "LinkedIn",
+    text: "fehmi-baltaci",
+    link: "https://linkedin.com/in/fehmi-baltaci",
+    delay: 250,
   },
   {
     icon: "bi bi-envelope",
     title: "Email Me",
     text: "fehmibalt@gmail.com",
-    delay: 400,
+    delay: 300,
   },
 ];
 
@@ -43,15 +44,6 @@ const ContactPage: React.FC = () => {
                     </div>
                   </div>
                 ))}
-
-                <iframe
-                  src="https://www.google.com/maps?q=Alpharetta,+GA&output=embed"
-                  frameBorder="0"
-                  style={{ border: 0, width: "100%", height: "270px" }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Map of Alpharetta"></iframe>
               </div>
             </div>
 
