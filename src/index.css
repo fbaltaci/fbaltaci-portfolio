@@ -1378,3 +1378,13 @@ section,
 
 .starter-section {
 }
+
+.nav-link-button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}

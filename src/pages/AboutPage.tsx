@@ -37,7 +37,7 @@ const AboutPage: React.FC = () => {
               <img src="/assets/profile-img.jpg" className="img-fluid" alt="Fehmi Baltaci" />
             </div>
             <div className="col-lg-8 content">
-              <h2>Software Engineer & QA Automation Expert</h2>
+              <h2>Software Engineer</h2>
               <p className="fst-italic">
                 Experienced in full-stack development and test automation with a track record of building robust
                 applications and tools used across engineering teams.

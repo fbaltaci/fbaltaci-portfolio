@@ -13,10 +13,36 @@ const projectData = [
       "/assets/projects/dashboard-project/historical-page.png",
       "/assets/projects/dashboard-project/logs-page.png",
     ],
-    repo: "https://github.com/fehmibaltaci/simple-dashboard",
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fehmibaltaci/simple-dashboard",
+    },
     live: "https://team-dashboard.onrender.com",
     category: "QA Analytics Dashboard",
     date: "April 2024",
+    details:
+      "This dashboard provides a visual representation of test results, helping teams identify trends, track performance, and quickly access logs for debugging. It simplifies the process of monitoring and analyzing test outcomes, ultimately leading to improved software quality and faster issue resolution.",
+  },
+  {
+    id: 2,
+    title: "Behave API Automation Framework",
+    description:
+      "An API automation framework using Behave (BDD), designed to test the ToolsQA BookStore API with Gherkin-based scenarios and Allure reporting.",
+    tools: ["Python", "Behave", "Gherkin", "Requests", "Allure", "Dotenv"],
+    images: [
+      "/assets/projects/behave-api-automation-project/allure-report.png",
+      "/assets/projects/behave-api-automation-project/feature-file.png",
+      "/assets/projects/behave-api-automation-project/api-helper-file.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/behave_automation_framework",
+    },
+    live: "", // no live version for beahve api automation frameworks
+    category: "API Test Automation",
+    date: "May 2024",
+    details:
+      "This project provides a modular, scalable test automation framework built in Python using the Behave library. It supports Gherkin-based scenarios and is integrated with Allure for beautiful test reports. The framework includes helper utilities, environment configs, and detailed logging, making it easy to run tests against API endpoints such as login, user creation, and book management.",
   },
 ];
 
@@ -68,8 +94,8 @@ const PortfolioDetailsPage: React.FC = () => {
                   {project.repo && (
                     <li>
                       <strong>GitHub Repo</strong>:{" "}
-                      <a href={project.repo} target="_blank" rel="noopener noreferrer">
-                        {project.repo}
+                      <a href={project.repo.url} target="_blank" rel="noopener noreferrer">
+                        {project.repo.label}
                       </a>
                     </li>
                   )}
@@ -78,10 +104,7 @@ const PortfolioDetailsPage: React.FC = () => {
 
               <div className="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
                 <h4>What this project solves:</h4>
-                <p>
-                  The dashboard helps QA and DevOps teams monitor test performance across environments. It simplifies
-                  debugging, exposes trends with graphs, and organizes logs in a readable format.
-                </p>
+                <p>{project.details}</p>
               </div>
             </div>
           </div>

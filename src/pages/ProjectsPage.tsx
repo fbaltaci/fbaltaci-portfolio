@@ -13,8 +13,30 @@ const projects = [
       "/assets/projects/dashboard-project/historical-page.png",
       "/assets/projects/dashboard-project/logs-page.png",
     ],
-    repo: "https://github.com/fehmibaltaci/simple-dashboard",
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fehmibaltaci/simple-dashboard"
+    },
     live: "https://team-dashboard.onrender.com",
+  },
+  {
+    id: 2,
+    title: "Behave API Automation Framework",
+    description:
+      "An API automation framework using Behave (BDD), validating ToolsQA BookStore APIs with Allure reports and Gherkin scenarios.",
+    tools: ["Python", "Behave", "Gherkin", "Requests", "Allure", "Dotenv"],
+    images: [
+      "/assets/projects/behave-api-automation-project/allure-report.png",
+      "/assets/projects/behave-api-automation-project/feature-file.png",
+      "/assets/projects/behave-api-automation-project/api-helper-file.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/behave_automation_framework"
+    },
+    live: "", // no live site needed for frameworks
+    category: "API Automation Framework",
+    date: "May 2024",
   },
 ];
 
@@ -61,8 +83,12 @@ const ProjectsPage: React.FC = () => {
                       </a>
                     )}
                     {project.repo && (
-                      <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark">
-                        GitHub
+                      <a
+                        href={project.repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-dark">
+                        {project.repo.label}
                       </a>
                     )}
                   </div>
