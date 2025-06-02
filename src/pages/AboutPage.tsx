@@ -33,9 +33,6 @@ const AboutPage: React.FC = () => {
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4 justify-content-center">
-            <div className="col-lg-4">
-              <img src="/assets/profile-img.jpg" className="img-fluid" alt="Fehmi Baltaci" />
-            </div>
             <div className="col-lg-8 content">
               <h2>Software Engineer</h2>
               <p className="fst-italic">
