@@ -44,6 +44,27 @@ const projectData = [
     details:
       "This project provides a modular, scalable test automation framework built in Python using the Behave library. It supports Gherkin-based scenarios and is integrated with Allure for beautiful test reports. The framework includes helper utilities, environment configs, and detailed logging, making it easy to run tests against API endpoints such as login, user creation, and book management.",
   },
+  {
+    id: 3,
+    title: "Java Cucumber API Automation Framework",
+    description:
+      "A BDD API testing framework using Java, Cucumber, and RestAssured to validate ToolsQA Book Store APIs with Gherkin steps and Allure reports.",
+    tools: ["Java", "Cucumber", "RestAssured", "JUnit", "Allure", "Gherkin"],
+    images: [
+      "/assets/projects/cucumber-automation-framework/reporting.png",
+      "/assets/projects/cucumber-automation-framework/feature-file.png",
+      "/assets/projects/cucumber-automation-framework/api-helper-class.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cucumber_automation_framework",
+    },
+    live: "",
+    category: "API Automation Framework",
+    date: "June 2024",
+    details:
+      "This Java-based API automation framework uses Cucumber for BDD and RestAssured for API testing. It includes Gherkin feature files, step definitions, and Allure reporting for comprehensive test results. The framework is designed to be modular and easily extensible, allowing for the addition of new API endpoints and test scenarios.",
+  },
 ];
 
 const PortfolioDetailsPage: React.FC = () => {
