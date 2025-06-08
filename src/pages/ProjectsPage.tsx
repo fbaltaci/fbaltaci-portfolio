@@ -53,7 +53,7 @@ const projects = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber_automation_framework",
     },
-    live: "",
+    live: "", // no live site needed for frameworks
     category: "API Automation Framework",
     date: "June 2024",
   },
