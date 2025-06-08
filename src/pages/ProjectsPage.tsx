@@ -15,7 +15,7 @@ const projects = [
     ],
     repo: {
       label: "GitHub",
-      url: "https://github.com/fehmibaltaci/simple-dashboard"
+      url: "https://github.com/fehmibaltaci/simple-dashboard",
     },
     live: "https://team-dashboard.onrender.com",
   },
@@ -32,11 +32,30 @@ const projects = [
     ],
     repo: {
       label: "GitHub",
-      url: "https://github.com/fbaltaci/behave_automation_framework"
+      url: "https://github.com/fbaltaci/behave_automation_framework",
     },
     live: "", // no live site needed for frameworks
     category: "API Automation Framework",
     date: "May 2024",
+  },
+  {
+    id: 3,
+    title: "Java Cucumber API Automation Framework",
+    description:
+      "A BDD API testing framework using Java, Cucumber, and RestAssured to validate ToolsQA Book Store APIs with Gherkin steps and Allure reports.",
+    tools: ["Java", "Cucumber", "RestAssured", "JUnit", "Allure", "Gherkin"],
+    images: [
+      "/assets/projects/cucumber-automation-framework/reporting.png",
+      "/assets/projects/cucumber-automation-framework/feature-file.png",
+      "/assets/projects/cucumber-automation-framework/api-helper-class.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cucumber_automation_framework",
+    },
+    live: "", // no live site needed for frameworks
+    category: "API Automation Framework",
+    date: "June 2024",
   },
 ];
 

@@ -80,7 +80,7 @@ const ExperiencePage: React.FC = () => {
     <main className="main resume-page">
       <section id="resume" className="resume section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Resume</h2>
+          <h2>Experience</h2>
           <p>
             Results-driven Software Engineer with strong QA background, skilled in building full-stack applications and
             automation frameworks using modern technologies.
