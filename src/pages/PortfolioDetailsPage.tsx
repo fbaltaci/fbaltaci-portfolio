@@ -65,6 +65,24 @@ const projectData = [
     details:
       "This Java-based API automation framework uses Cucumber for BDD and RestAssured for API testing. It includes Gherkin feature files, step definitions, and Allure reporting for comprehensive test results. The framework is designed to be modular and easily extensible, allowing for the addition of new API endpoints and test scenarios.",
   },
+  {
+    id: 4,
+    title: "Postman API Collection BookStore Automation",
+    description:
+      "A fully automated Postman test suite for the ToolsQA BookStore API. Covers login, token generation, and book management with dynamic user creation, environment variables, pre-request/test scripts, and Newman support.",
+    tools: ["Postman", "Newman", "JavaScript", "Chai Assertion", "REST API"],
+    images: [
+      "/assets/projects/postman-api-collection/collection-structure.png",
+      "/assets/projects/postman-api-collection/test-script-sample.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/BookStore-API-Collection",
+    },
+    live: "", // No live app for Postman collection
+    category: "API Test Automation",
+    date: "July 2024",
+  },
 ];
 
 const PortfolioDetailsPage: React.FC = () => {
