@@ -57,6 +57,24 @@ const projects = [
     category: "API Automation Framework",
     date: "June 2024",
   },
+  {
+    id: 4,
+    title: "Postman API Collection BookStore Automation",
+    description:
+      "A fully automated Postman test suite for the ToolsQA BookStore API. Covers login, token generation, and book management with dynamic user creation, environment variables, pre-request/test scripts, and Newman support.",
+    tools: ["Postman", "Newman", "JavaScript", "Chai Assertion", "REST API"],
+    images: [
+      "/assets/projects/postman-api-collection/collection-structure.png",
+      "/assets/projects/postman-api-collection/test-script-sample.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/BookStore-API-Collection",
+    },
+    live: "", // No live app for Postman collection
+    category: "API Test Automation",
+    date: "July 2024",
+  },
 ];
 
 const ProjectsPage: React.FC = () => {
