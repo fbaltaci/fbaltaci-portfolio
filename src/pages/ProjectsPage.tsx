@@ -45,7 +45,7 @@ const projects = [
       "A BDD API testing framework using Java, Cucumber, and RestAssured to validate ToolsQA Book Store APIs with Gherkin steps and Allure reports.",
     tools: ["Java", "Cucumber", "RestAssured", "JUnit", "Allure", "Gherkin"],
     images: [
-      "/assets/projects/cucumber-automation-framework/reporting.png",
+      "/assets/projects/cucumber-automation-framework/reports-file.png",
       "/assets/projects/cucumber-automation-framework/feature-file.png",
       "/assets/projects/cucumber-automation-framework/api-helper-class.png",
     ],
@@ -82,9 +82,9 @@ const projects = [
       "A test automation framework built with Java, Selenium WebDriver, Cucumber, and TestNG to automate UI tests for the DemoQA website. Follows the Page Object Model design and supports HTML reporting, driver reuse, and clean test organization.",
     tools: ["Java", "Selenium", "Cucumber", "TestNG", "WebDriverManager", "Maven", "Gherkin"],
     images: [
-      "/assets/projects/selenium-demoqa-framework/home-page-step.png",
-      "/assets/projects/selenium-demoqa-framework/page-object.png",
-      "/assets/projects/selenium-demoqa-framework/testng-runner.png",
+      "/assets/projects/java-selenium-demoqa/reports-file.png",
+      "/assets/projects/java-selenium-demoqa/feature-file.png",
+      "/assets/projects/java-selenium-demoqa/textbox-page-file.png",
     ],
     repo: {
       label: "GitHub",
@@ -101,9 +101,9 @@ const projects = [
       "A Selenium-based UI automation framework using Java and Cucumber to test the Sauce Labs demo app cross-browser via Sauce cloud infrastructure.",
     tools: ["Java", "Selenium", "Cucumber", "TestNG", "WebDriverManager", "Maven", "Sauce Labs", "Gherkin"],
     images: [
-      "/assets/projects/sauce-labs-framework/login-test.png",
-      "/assets/projects/sauce-labs-framework/sauce-dashboard.png",
-      "/assets/projects/sauce-labs-framework/test-runner.png",
+      "/assets/projects/cucumber-selenium-framework/report-file.png",
+      "/assets/projects/cucumber-selenium-framework/login-page-file.png",
+      "/assets/projects/cucumber-selenium-framework/login-feature-file.png",
     ],
     repo: {
       label: "GitHub",
