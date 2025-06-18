@@ -75,6 +75,44 @@ const projects = [
     category: "API Test Automation",
     date: "July 2024",
   },
+  {
+    id: 5,
+    title: "Java Selenium UI Automation Framework for DemoQA",
+    description:
+      "A test automation framework built with Java, Selenium WebDriver, Cucumber, and TestNG to automate UI tests for the DemoQA website. Follows the Page Object Model design and supports HTML reporting, driver reuse, and clean test organization.",
+    tools: ["Java", "Selenium", "Cucumber", "TestNG", "WebDriverManager", "Maven", "Gherkin"],
+    images: [
+      "/assets/projects/selenium-demoqa-framework/home-page-step.png",
+      "/assets/projects/selenium-demoqa-framework/page-object.png",
+      "/assets/projects/selenium-demoqa-framework/testng-runner.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cucumber-selenium-demoqa",
+    },
+    live: "",
+    category: "UI Automation Framework",
+    date: "June 2024",
+  },
+  {
+    id: 6,
+    title: "Cucumber Selenium Sauce Labs UI Automation",
+    description:
+      "A Selenium-based UI automation framework using Java and Cucumber to test the Sauce Labs demo app cross-browser via Sauce cloud infrastructure.",
+    tools: ["Java", "Selenium", "Cucumber", "TestNG", "WebDriverManager", "Maven", "Sauce Labs", "Gherkin"],
+    images: [
+      "/assets/projects/sauce-labs-framework/login-test.png",
+      "/assets/projects/sauce-labs-framework/sauce-dashboard.png",
+      "/assets/projects/sauce-labs-framework/test-runner.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cucumber-selenium-framework",
+    },
+    live: "",
+    category: "UI Automation Framework",
+    date: "June 2024",
+  },
 ];
 
 const ProjectsPage: React.FC = () => {
