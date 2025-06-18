@@ -45,7 +45,7 @@ const projects = [
       "A BDD API testing framework using Java, Cucumber, and RestAssured to validate ToolsQA Book Store APIs with Gherkin steps and Allure reports.",
     tools: ["Java", "Cucumber", "RestAssured", "JUnit", "Allure", "Gherkin"],
     images: [
-      "/assets/projects/cucumber-automation-framework/reporting.png",
+      "/assets/projects/cucumber-automation-framework/reports-file.png",
       "/assets/projects/cucumber-automation-framework/feature-file.png",
       "/assets/projects/cucumber-automation-framework/api-helper-class.png",
     ],
@@ -74,6 +74,44 @@ const projects = [
     live: "", // No live app for Postman collection
     category: "API Test Automation",
     date: "July 2024",
+  },
+  {
+    id: 5,
+    title: "Java Selenium UI Automation Framework for DemoQA",
+    description:
+      "A test automation framework built with Java, Selenium WebDriver, Cucumber, and TestNG to automate UI tests for the DemoQA website. Follows the Page Object Model design and supports HTML reporting, driver reuse, and clean test organization.",
+    tools: ["Java", "Selenium", "Cucumber", "TestNG", "WebDriverManager", "Maven", "Gherkin"],
+    images: [
+      "/assets/projects/java-selenium-demoqa/reports-file.png",
+      "/assets/projects/java-selenium-demoqa/feature-file.png",
+      "/assets/projects/java-selenium-demoqa/textbox-page-file.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cucumber-selenium-demoqa",
+    },
+    live: "",
+    category: "UI Automation Framework",
+    date: "June 2024",
+  },
+  {
+    id: 6,
+    title: "Cucumber Selenium Sauce Labs UI Automation",
+    description:
+      "A Selenium-based UI automation framework using Java and Cucumber to test the Sauce Labs demo app cross-browser via Sauce cloud infrastructure.",
+    tools: ["Java", "Selenium", "Cucumber", "TestNG", "WebDriverManager", "Maven", "Sauce Labs", "Gherkin"],
+    images: [
+      "/assets/projects/cucumber-selenium-framework/report-file.png",
+      "/assets/projects/cucumber-selenium-framework/login-page-file.png",
+      "/assets/projects/cucumber-selenium-framework/login-feature-file.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cucumber-selenium-framework",
+    },
+    live: "",
+    category: "UI Automation Framework",
+    date: "June 2024",
   },
 ];
 
