@@ -50,5 +50,7 @@ Visit the live portfolio: https://fehmibaltaci.dev
 
 ## 📬 Contact
 Email: fehmi.balt@gmail.com
+
 GitHub: [fbaltaci](www.github.com/fbaltaci)
+
 LinkedIn: [fehmi-baltaci](www.linkedin.com/in/fehmi-baltaci)
