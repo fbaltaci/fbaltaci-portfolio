@@ -38,7 +38,7 @@ const projectData = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/behave_automation_framework",
     },
-    live: "", // no live version for beahve api automation frameworks
+    live: "", // No live version for beahve api automation frameworks
     category: "API Test Automation",
     date: "May 2024",
     details:
@@ -59,7 +59,7 @@ const projectData = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber_automation_framework",
     },
-    live: "",
+    live: "", // No live version for test frameworks
     category: "API Automation Framework",
     date: "June 2024",
     details:
@@ -98,7 +98,7 @@ const projectData = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber-selenium-demoqa",
     },
-    live: "",
+    live: "", // No live site needed for test frameworks
     category: "UI Automation Framework",
     date: "June 2024",
     details:
@@ -119,11 +119,32 @@ const projectData = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber-selenium-saucelabs",
     },
-    live: "",
+    live: "", // No live site needed for test frameworks
     category: "UI Automation Framework",
     date: "June 2024",
     details:
       "This project automates UI testing for the Sauce Labs demo app using Selenium WebDriver and Cucumber with Gherkin syntax. The framework supports remote execution on Sauce Labs for cross-browser and cross-platform testing. It includes reusable step definitions, a page object model, TestNG runners, and cloud-based parallel execution with reporting.",
+  },
+  {
+    id: 7,
+    title: "Cypress UI and API Automation Framework for DemoQA",
+    description:
+      "A Cypress-based UI test automation framework that validates the DemoQA Text Box form using the Page Object Model design. It integrates Allure reporting to visualize test results effectively.",
+    tools: ["JavaScript", "Cypress", "Allure", "Page Object Model", "Mocha"],
+    images: [
+      "/assets/projects/cypress-ui-api-automation-framework/cypress-allure-report.png",
+      "/assets/projects/cypress-ui-api-automation-framework/text-box-page.png",
+      "/assets/projects/cypress-ui-api-automation-framework/text-box-form-tests.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cypress-automation-framework",
+    },
+    live: "", // No live site needed for test frameworks
+    category: "UI and API Automation Framework",
+    date: "June 2024",
+    details:
+      "This modern UI automation framework leverages Cypress and the Page Object Model to structure and maintain test cases. It targets the DemoQA site and covers form validation scenarios with proper test assertions and Allure report generation. The project demonstrates scalable Cypress architecture, custom commands, and plugin integration best practices.",
   },
 ];
 
