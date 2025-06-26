@@ -34,7 +34,7 @@ const projects = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/behave_automation_framework",
     },
-    live: "", // no live site needed for frameworks
+    live: "", // No live site needed for frameworks
     category: "API Automation Framework",
     date: "May 2024",
   },
@@ -53,7 +53,7 @@ const projects = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber_automation_framework",
     },
-    live: "", // no live site needed for frameworks
+    live: "", // No live site needed for frameworks
     category: "API Automation Framework",
     date: "June 2024",
   },
@@ -90,7 +90,7 @@ const projects = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber-selenium-demoqa",
     },
-    live: "",
+    live: "", // No live site needed for frameworks
     category: "UI Automation Framework",
     date: "June 2024",
   },
@@ -109,8 +109,27 @@ const projects = [
       label: "GitHub",
       url: "https://github.com/fbaltaci/cucumber-selenium-framework",
     },
-    live: "",
+    live: "", // No live site needed for frameworks
     category: "UI Automation Framework",
+    date: "June 2024",
+  },
+  {
+    id: 7,
+    title: "Cypress UI and API Automation Framework for DemoQA",
+    description:
+      "A modern UI test automation framework built with Cypress and JavaScript, designed using the Page Object Model pattern. Integrates Allure reports for comprehensive test result visualization. Tests the DemoQA Text Box form with structured and maintainable architecture.",
+    tools: ["JavaScript", "Cypress", "Allure", "Page Object Model", "Mocha"],
+    images: [
+      "/assets/projects/cypress-ui-api-automation-framework/cypress-allure-report.png",
+      "/assets/projects/cypress-ui-api-automation-framework/text-box-page.png",
+      "/assets/projects/cypress-ui-api-automation-framework/text-box-form-tests.png",
+    ],
+    repo: {
+      label: "GitHub",
+      url: "https://github.com/fbaltaci/cypress-automation-framework",
+    },
+    live: "", // No live site needed for frameworks
+    category: "UI and API Automation Framework",
     date: "June 2024",
   },
 ];
