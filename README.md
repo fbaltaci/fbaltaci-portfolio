@@ -1,55 +1,56 @@
-# React + TypeScript + Vite
+# 💼 Fehmi Baltaci – Developer Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the source code for my personal portfolio website built using **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. It showcases my featured projects, skills, and provides ways to contact me.
 
-Currently, two official plugins are available:
+## 🧰 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React 18
+- 🌀 TypeScript
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 🎭 React Icons
+- 📦 Node.js
+- 🧹 ESLint + Prettier (optional for linting/formatting)
 
-## Expanding the ESLint configuration
+## 🚀 Project Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Responsive layout optimized for both desktop and mobile
+- Dynamic project section with images, descriptions, and GitHub links
+- Contact section to reach out via email
+- Theme toggle (light/dark)
+- Smooth scrolling and clean navigation
+- Easy to extend and customize
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Folder Structure
+
+```
+src/
+├── assets/ # Images and icons used in the project
+├── components/ # Reusable React components (Header, Footer, etc.)
+├── pages/ # Main page sections (Landing, Projects, Contact, etc.)
+├── styles/ # Global and utility CSS
+├── data/ # Project data used for dynamic rendering
+├── App.tsx # App entry point
+├── main.tsx # Vite app bootstrap
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📜 Scripts
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install           # Install dependencies
+npm run dev           # Run in development mode
+npm run build         # Build for production
+npm run preview       # Preview production build
+npm run lint          # Lint code (optional)
 ```
-"# fbaltaci-portfolio" 
+
+## 🌐 Live Demo
+Visit the live portfolio: https://fehmibaltaci.dev
+
+## 📬 Contact
+Email: fehmi.balt@gmail.com
+
+GitHub: [fbaltaci](www.github.com/fbaltaci)
+
+LinkedIn: [fehmi-baltaci](www.linkedin.com/in/fehmi-baltaci)
