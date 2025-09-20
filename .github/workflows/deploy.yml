@@ -19,6 +19,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
+      # Disable Jekyll processing
+      - run: touch dist/.nojekyll
       # include CNAME in the published artifact (so custom domain works even
       # before you toggle it in repo settings)
       - run: cp CNAME dist/
