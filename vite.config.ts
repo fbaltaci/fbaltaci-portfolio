@@ -1,15 +1,16 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // Try relative paths instead
+  base: '/', // Use absolute paths for GitHub Pages
   build: {
-    assetsDir: "assets",
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
         manualChunks: undefined,
       },
     },
   },
-});
+})
+
