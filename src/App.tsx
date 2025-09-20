@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/"}>
       <Header onToggleTheme={toggleTheme} />
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -33,3 +33,4 @@ const App = () => {
 };
 
 export default App;
+
