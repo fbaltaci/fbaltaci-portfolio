@@ -1,5 +1,8 @@
 import { PERSONAL_INFO } from "../constants";
 
+/**
+ * Hero section component displaying personal introduction
+ */
 const HomePage: React.FC = () => {
   return (
     <main className="main index-page">

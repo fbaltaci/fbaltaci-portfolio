@@ -16,6 +16,9 @@ const personalInfo = [
   }
 ];
 
+/**
+ * About section component displaying personal information and details
+ */
 const AboutPage: React.FC = () => {
   useEffect(() => {
     // Example: AOS.init();

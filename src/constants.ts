@@ -1,3 +1,8 @@
+import { Project } from "./models/Project";
+import { Education } from "./models/Education";
+import { Experience } from "./models/Experience";
+import { ContactInfo } from "./models/Contact";
+
 export const SOCIAL_LINKS = {
   LINKEDIN: {
     USERNAME: "fehmi-baltaci",
@@ -24,7 +29,7 @@ export const PERSONAL_INFO = {
     "I'm currently working as a Software Engineer II at Advisor360°, developing Angular frontends and Python backend services. I bring a unique blend of development and QA skills, having created test frameworks and dashboards that support both engineering and QA teams. I'm continuously seeking to improve code quality and system reliability.",
 } as const;
 
-export const CONTACT_INFO = [
+export const CONTACT_INFO: ContactInfo[] = [
   {
     icon: "bi bi-telephone",
     title: "Call Me",
@@ -83,7 +88,7 @@ export const EXPERIENCE_CONTENT = {
       title: "Bachelor's in Engineering",
       institution: "Bilecik University",
     },
-  ],
+  ] as Education[],
   EXPERIENCE: [
     {
       title: "Software Engineer II",
@@ -134,10 +139,10 @@ export const EXPERIENCE_CONTENT = {
         "Tracked issues using Salesforce and JIRA.",
       ],
     },
-  ],
+  ] as Experience[],
 } as const;
 
-export const PROJECTS_DATA = [
+export const PROJECTS_DATA: Project[] = [
   {
     id: 1,
     title: "Test Results Dashboard",
@@ -285,3 +290,6 @@ export const PROJECTS_DATA = [
       "This modern UI automation framework leverages Cypress and the Page Object Model to structure and maintain test cases. It targets the DemoQA site and covers form validation scenarios with proper test assertions and Allure report generation. The project demonstrates scalable Cypress architecture, custom commands, and plugin integration best practices.",
   },
 ] as const;
+
+
+

@@ -2,6 +2,10 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { PROJECTS_DATA } from "../constants";
 
+/**
+ * Individual project details page component
+ * Displays comprehensive information about a specific project
+ */
 const PortfolioDetailsPage: React.FC = () => {
   const { id } = useParams();
   const project = PROJECTS_DATA.find((p) => p.id === Number(id));

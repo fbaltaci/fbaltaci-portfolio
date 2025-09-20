@@ -7,6 +7,9 @@ const summary = {
   details: [PERSONAL_INFO.LOCATION, PERSONAL_INFO.PHONE, PERSONAL_INFO.EMAIL],
 };
 
+/**
+ * Experience section component displaying education and work history
+ */
 const ExperiencePage: React.FC = () => {
   return (
     <main className="main resume-page">

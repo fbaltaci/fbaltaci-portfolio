@@ -5,6 +5,9 @@ import ExperiencePage from "./ExperiencePage";
 import HomePage from "./HomePage";
 import ProjectsPage from "./ProjectsPage";
 
+/**
+ * Main landing page component that renders all page sections
+ */
 const LandingPage: React.FC = () => {
   return (
     <>
