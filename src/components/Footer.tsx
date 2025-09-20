@@ -1,4 +1,5 @@
 import React from "react";
+import { PERSONAL_INFO, SOCIAL_LINKS } from "../constants";
 
 const Footer: React.FC = () => {
   return (
@@ -6,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="copyright text-center">
           <p>
-            © <span>Copyright</span> <strong className="px-1 sitename">Fehmi Baltaci</strong>{" "}
+            © <span>Copyright</span> <strong className="px-1 sitename">{PERSONAL_INFO.NAME}</strong>{" "}
             <span>
               All Rights Reserved
               <br />
@@ -16,14 +17,14 @@ const Footer: React.FC = () => {
 
         <nav className="social-links d-flex justify-content-center" aria-label="Social media">
           <a
-            href="https://linkedin.com/in/fehmibaltaci"
+            href={SOCIAL_LINKS.LINKEDIN.URL}
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn Profile">
             <i className="bi bi-linkedin"></i>
           </a>
           <a
-            href="https://github.com/fbaltaci"
+            href={SOCIAL_LINKS.GITHUB.URL}
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub Profile">
@@ -36,3 +37,5 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
+

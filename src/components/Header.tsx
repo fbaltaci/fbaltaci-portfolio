@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { SOCIAL_LINKS, PERSONAL_INFO } from "../constants";
 
 interface HeaderProps {
   onToggleTheme: () => void;
@@ -33,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ onToggleTheme }) => {
     <header id="header" className={`header d-flex align-items-center sticky-top ${themeClass}`}>
       <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
         <Link to="/" className="logo d-flex align-items-center me-auto me-xl-0">
-          <h1 className="sitename">Fehmi Baltaci</h1>
+          <h1 className="sitename">{PERSONAL_INFO.NAME}</h1>
         </Link>
 
         <nav id="navmenu" className="navmenu">
@@ -68,10 +69,10 @@ const Header: React.FC<HeaderProps> = ({ onToggleTheme }) => {
         </nav>
 
         <div className="header-social-links d-flex align-items-center">
-          <a href="https://linkedin.com/in/fehmi-baltaci" target="_blank" rel="noopener noreferrer">
+          <a href={SOCIAL_LINKS.LINKEDIN.URL} target="_blank" rel="noopener noreferrer">
             <i className="bi bi-linkedin"></i>
           </a>
-          <a href="https://github.com/fehmibaltaci" target="_blank" rel="noopener noreferrer">
+          <a href={SOCIAL_LINKS.GITHUB.URL} target="_blank" rel="noopener noreferrer">
             <i className="bi bi-github"></i>
           </a>
           <button onClick={onToggleTheme} className="btn btn-sm btn-outline-secondary ms-3">

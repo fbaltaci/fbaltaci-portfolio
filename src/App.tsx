@@ -6,7 +6,13 @@ import Header from "./components/Header";
 import LandingPage from "./pages/LandingPage";
 import PortfolioDetailsPage from "./pages/PortfolioDetailsPage";
 
+/**
+ * Main application component that handles routing and theme management
+ */
 const App = () => {
+  /**
+   * Toggles between light and dark theme
+   */
   const toggleTheme = () => {
     document.body.classList.toggle("dark-theme");
     const isDark = document.body.classList.contains("dark-theme");
@@ -33,4 +39,3 @@ const App = () => {
 };
 
 export default App;
-
