@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PAGE_CONTENT } from "../constants";
 
 const projects = [
   {
@@ -15,7 +16,7 @@ const projects = [
     ],
     repo: {
       label: "GitHub",
-      url: "https://github.com/fehmibaltaci/simple-dashboard",
+      url: "https://github.com/fbaltaci/simple-dashboard",
     },
     live: "https://team-dashboard.onrender.com",
   },
@@ -139,8 +140,8 @@ const ProjectsPage: React.FC = () => {
     <main className="main portfolio-page">
       <section id="portfolio" className="portfolio section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>Here are a few of my featured projects with screenshots and tech stack highlights.</p>
+          <h2>{PAGE_CONTENT.PORTFOLIO.TITLE}</h2>
+          <p>{PAGE_CONTENT.PORTFOLIO.SUBTITLE}</p>
         </div>
 
         <div className="container">

@@ -1,41 +1,20 @@
 import React from "react";
-
-const contactInfo = [
-  {
-    icon: "bi bi-telephone",
-    title: "Call Me",
-    text: "+1 (617) 850-5304",
-    delay: 200,
-  },
-  {
-    icon: "bi bi-linkedin",
-    title: "LinkedIn",
-    text: "fehmi-baltaci",
-    link: "https://linkedin.com/in/fehmi-baltaci",
-    delay: 250,
-  },
-  {
-    icon: "bi bi-envelope",
-    title: "Email Me",
-    text: "fehmibalt@gmail.com",
-    delay: 300,
-  },
-];
+import { CONTACT_INFO, PAGE_CONTENT } from "../constants";
 
 const ContactPage: React.FC = () => {
   return (
     <main className="main contact-page">
       <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Feel free to reach out for opportunities, questions, or collaborations!</p>
+          <h2>{PAGE_CONTENT.CONTACT.TITLE}</h2>
+          <p>{PAGE_CONTENT.CONTACT.SUBTITLE}</p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4">
             <div className="col-lg-5">
               <div className="info-wrap">
-                {contactInfo.map((info, index) => (
+                {CONTACT_INFO.map((info, index) => (
                   <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={info.delay} key={index}>
                     <i className={`${info.icon} flex-shrink-0`}></i>
                     <div>
