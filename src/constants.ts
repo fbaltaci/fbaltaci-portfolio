@@ -1,32 +1,25 @@
-import { Project } from "./models/Project";
+import { ContactInfo } from "./models/Contact";
 import { Education } from "./models/Education";
 import { Experience } from "./models/Experience";
-import { ContactInfo } from "./models/Contact";
+import { Project } from "./models/Project";
 
 export const SOCIAL_LINKS = {
-  LINKEDIN: {
-    USERNAME: "fehmi-baltaci",
-    URL: "https://linkedin.com/in/fehmi-baltaci",
-  },
-  GITHUB: {
-    USERNAME: "fbaltaci",
-    URL: "https://github.com/fbaltaci",
-  },
+  LINKEDIN: { USERNAME: "fehmi-baltaci", URL: "https://linkedin.com/in/fehmi-baltaci" },
+  GITHUB: { USERNAME: "fbaltaci", URL: "https://github.com/fbaltaci" },
 } as const;
 
 export const PERSONAL_INFO = {
   NAME: "Fehmi Baltaci",
   EMAIL: "fehmibalt@gmail.com",
   PHONE: "617-850-5304",
-  LOCATION: "Alpharetta, GA",
+  LOCATION: "United States (Open to remote & relocation)",
   WEBSITE: "https://fehmibaltaci.dev",
   TITLE: "Software Engineer",
-  TAGLINE:
-    "Passionate and versatile Software Engineer with a strong foundation in QA automation, backend services, and frontend development.",
+  TAGLINE: "Full-stack Software Engineer with a strong experience in automation and CI/CD.",
   DESCRIPTION:
     "Experienced in full-stack development and test automation with a track record of building robust applications and tools used across engineering teams.",
   CURRENT_ROLE:
-    "I'm currently working as a Software Engineer II at Advisor360°, developing Angular frontends and Python backend services. I bring a unique blend of development and QA skills, having created test frameworks and dashboards that support both engineering and QA teams. I'm continuously seeking to improve code quality and system reliability.",
+    "Software Engineer II at Advisor360, delivering Angular frontends and Python (Flask/FastAPI) services with Redis and CI/CD (GitHub Actions, Jenkins).",
 } as const;
 
 export const CONTACT_INFO: ContactInfo[] = [
@@ -57,12 +50,12 @@ export const PAGE_CONTENT = {
     SUBTITLE: PERSONAL_INFO.TAGLINE,
   },
   PORTFOLIO: {
-    TITLE: "Portfolio",
-    SUBTITLE: "Here are a few of my featured projects with screenshots and tech stack highlights.",
+    TITLE: "Projects",
+    SUBTITLE: "Selected engineering work and internal tooling that improve reliability and developer workflows.",
   },
   CONTACT: {
     TITLE: "Contact",
-    SUBTITLE: "Feel free to reach out for opportunities, questions, or collaborations!",
+    SUBTITLE: "Open to roles and collaborations reach out anytime!",
   },
 } as const;
 
@@ -77,12 +70,8 @@ export const EXPERIENCE_CONTENT = {
   EDUCATION: [
     {
       title: "MS in Software Development",
-      period: "2023 - Present",
+      period: "2023 - 2025",
       institution: "Boston University",
-    },
-    {
-      title: "QA Engineering Boot Camp",
-      institution: "Boston Ivy Tech",
     },
     {
       title: "Bachelor's in Engineering",
@@ -93,50 +82,56 @@ export const EXPERIENCE_CONTENT = {
     {
       title: "Software Engineer II",
       company: "Advisor360",
-      period: "12/2023 - Present",
+      period: "11/2022 – Present",
       bullets: [
-        "Developed Angular UI components and Python Flask backend services.",
-        "Wrote unit and E2E tests with Jest and Pytest to ensure quality and reliability.",
-        "Collaborated with QA and UX teams to deliver production-ready features.",
-        "Improved backend testability, reducing post-deployment issues.",
+        "Develop Angular UI components and Flask/FastAPI backend services for enterprise financial applications.",
+        "Design scalable APIs and manage Redis caching to support complex test result workflows and high-performance data flows.",
+        "Implement unit, integration, and end-to-end tests with Jest, Pytest, and Playwright to ensure reliability and maintainability.",
+        "Enhance CI/CD pipelines with GitHub Actions and Jenkins, improving deployment stability and reducing release cycle time.",
+        "Build data dashboards with Pandas and Plotly to provide visibility into system metrics and platform health.",
+        "Collaborate with UX, QA, and product teams to deliver production-ready features in Agile sprints.",
+        "Mentor junior developers, contribute to code reviews, and champion best practices for clean, maintainable code.",
       ],
     },
     {
-      title: "QA Automation Engineer II",
-      company: "Advisor360",
-      period: "11/2022 - 12/2023",
-      bullets: [
-        "Created Python dashboards using Plotly for test visibility.",
-        "Built automation frameworks using Behave, Requests, and TestComplete.",
-        "Performed manual and automated API/UI tests using Postman and TestComplete.",
-      ],
-    },
-    {
-      title: "QA Automation Engineer II",
+      title: "Software Engineer",
       company: "Aliaswire",
-      period: "7/2021 - 11/2022",
+      period: "07/2021 - 11/2022",
       bullets: [
-        "Built a complete test framework with 250+ automated cases.",
-        "Tested APIs and UI using Java, Selenium, and Rest-Assured.",
-        "Managed testing life cycle with TestRail and JIRA.",
+        "Built and maintained React applications with a focus on performance and maintainability, leveraging Vite for fast builds.",
+        "Integrated AWS services (S3, Lambda) and implemented MongoDB and Redis for data storage and caching solutions.",
+        "Developed a custom automation framework with Java, Selenium, Cucumber, and RestAssured, covering 250+ API and UI tests.",
+        "Automated regression, smoke, and security test suites, improving release quality and reducing manual effort.",
+        "Containerized services using Docker and collaborated on Kubernetes deployments to production environments.",
+        "Validated APIs and UI workflows with Postman, BrowserStack, and MySQL, ensuring end-to-end reliability in financial systems.",
+        "Built and maintained IVR test scenarios to validate telephony payment flows.",
       ],
     },
     {
-      title: "QA Automation Engineer",
+      title: "Software Engineer",
       company: "Mass. Medical Society",
-      period: "3/2020 - 7/2021",
+      period: "03/2020 - 07/2021",
       bullets: [
-        "Automated backend and UI tests for financial services and gateways.",
-        "Worked with Postman, MySQL, Jenkins, and AWS cloud testing.",
+        "Developed and enhanced Angular components with TypeScript and SCSS for member tools and dashboards.",
+        "Integrated REST APIs into web applications and handled asynchronous data flows for financial and membership services.",
+        "Built a Java-based automation framework with Selenium and RestAssured, implementing 200+ automated UI and API tests.",
+        "Automated smoke, regression, and integration test suites to improve release coverage and speed.",
+        "Performed backend validation using Postman, MySQL, and AWS, ensuring data integrity in cloud-based systems.",
+        "Contributed to Agile practices, code reviews, and mentored junior engineers in automation best practices.",
       ],
     },
     {
-      title: "QA Automation Engineer",
+      title: "Software Engineer",
       company: "HMS Eliza",
-      period: "11/2019 - 3/2020",
+      period: "11/2019 - 03/2020",
       bullets: [
-        "Executed IVR and End-to-End test scenarios using Java and Selenium.",
-        "Tracked issues using Salesforce and JIRA.",
+        "Built insurance tools using JavaScript, HTML, and CSS, with responsive UI components and cross-browser compatibility.",
+        "Integrated REST APIs with backend services for real-time claims and eligibility checks.",
+        "Developed Python scripts for data setup, validation, and custom test workflows to support engineering and QA needs.",
+        "Automated regression and end-to-end scenarios with Java, Selenium, Maven, and Cucumber, ensuring accuracy of telephony and web workflows.",
+        "Created and executed IVR test cases (DTMF, voice input) to validate call center and payment systems.",
+        "Supported DevOps with Docker-based local environments, debugging setups, and version control using Git.",
+        "Collaborated in Agile sprints, code reviews, and defect triage using Jira and Salesforce, ensuring timely resolution of issues.",
       ],
     },
   ] as Experience[],
@@ -290,6 +285,3 @@ export const PROJECTS_DATA: Project[] = [
       "This modern UI automation framework leverages Cypress and the Page Object Model to structure and maintain test cases. It targets the DemoQA site and covers form validation scenarios with proper test assertions and Allure report generation. The project demonstrates scalable Cypress architecture, custom commands, and plugin integration best practices.",
   },
 ] as const;
-
-
-
