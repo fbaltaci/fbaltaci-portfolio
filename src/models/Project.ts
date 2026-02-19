@@ -27,4 +27,6 @@ export interface Project {
   date: string;
   /** Detailed description of the project */
   details: string;
+  /** Project type - either 'SE' for Software Engineering or 'QA' for Quality Assurance */
+  type: "SE" | "QA";
 }

@@ -158,6 +158,7 @@ export const PROJECTS_DATA: Project[] = [
     date: "April 2024",
     details:
       "This dashboard provides a visual representation of test results, helping teams identify trends, track performance, and quickly access logs for debugging. It simplifies the process of monitoring and analyzing test outcomes, ultimately leading to improved software quality and faster issue resolution.",
+    type: "QA",
   },
   {
     id: 2,
@@ -179,6 +180,7 @@ export const PROJECTS_DATA: Project[] = [
     date: "May 2024",
     details:
       "This project provides a modular, scalable test automation framework built in Python using the Behave library. It supports Gherkin-based scenarios and is integrated with Allure for beautiful test reports. The framework includes helper utilities, environment configs, and detailed logging, making it easy to run tests against API endpoints such as login, user creation, and book management.",
+    type: "QA",
   },
   {
     id: 3,
@@ -200,6 +202,7 @@ export const PROJECTS_DATA: Project[] = [
     date: "June 2024",
     details:
       "This Java-based API automation framework uses Cucumber for BDD and RestAssured for API testing. It includes Gherkin feature files, step definitions, and Allure reporting for comprehensive test results. The framework is designed to be modular and easily extensible, allowing for the addition of new API endpoints and test scenarios.",
+    type: "QA",
   },
   {
     id: 4,
@@ -220,6 +223,7 @@ export const PROJECTS_DATA: Project[] = [
     date: "July 2024",
     details:
       "A fully automated Postman test suite for the ToolsQA BookStore API. Covers login, token generation, and book management with dynamic user creation, environment variables, pre-request/test scripts, and Newman support.",
+    type: "QA",
   },
   {
     id: 5,
@@ -241,6 +245,7 @@ export const PROJECTS_DATA: Project[] = [
     date: "June 2024",
     details:
       "This project automates user interface testing for the DemoQA website using Selenium WebDriver with the Cucumber BDD approach. It includes page objects for maintainability, a shared driver factory, and TestNG-based runners for structured execution. HTML reports are generated after each test run for easy results tracking and debugging.",
+    type: "QA",
   },
   {
     id: 6,
@@ -262,6 +267,7 @@ export const PROJECTS_DATA: Project[] = [
     date: "June 2024",
     details:
       "This project automates UI testing for the Sauce Labs demo app using Selenium WebDriver and Cucumber with Gherkin syntax. The framework supports remote execution on Sauce Labs for cross-browser and cross-platform testing. It includes reusable step definitions, a page object model, TestNG runners, and cloud-based parallel execution with reporting.",
+    type: "QA",
   },
   {
     id: 7,
@@ -283,5 +289,6 @@ export const PROJECTS_DATA: Project[] = [
     date: "June 2024",
     details:
       "This modern UI automation framework leverages Cypress and the Page Object Model to structure and maintain test cases. It targets the DemoQA site and covers form validation scenarios with proper test assertions and Allure report generation. The project demonstrates scalable Cypress architecture, custom commands, and plugin integration best practices.",
+    type: "QA",
   },
 ] as const;
